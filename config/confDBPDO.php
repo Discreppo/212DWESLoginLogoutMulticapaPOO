@@ -1,9 +1,10 @@
 <?php
 /**
- * * @author original Carlos García Cachón
+ * @author original Carlos García Cachón
  * @author Oscar Pascual Ferrero
  * @version 1.0
  * @since 15/01/2024
+ * @copyright Todos los derechos reservados a Carlos García
  */ 
 
 if ($_SERVER['SERVER_NAME'] == 'daw212.isauces.local') {
