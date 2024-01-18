@@ -1,18 +1,19 @@
 /**
- * Author:  Carlos García Cachón
- * Created: 28 nov 2023
+ * Author original:  Carlos García Cachón
+ * Author: Oscar Pascual Ferrero
+ * Created: 17 ene 2024
  */
 
 --Eliminar base de datos en caso de que exista
-DROP DATABASE IF EXISTS DB214DWESLoginLogoffTema5;
+DROP DATABASE IF EXISTS DB212DWESLoginLogoffTema5;
 
-DROP USER IF EXISTS 'user214DWESLoginLogoffTema5'@'%';
+DROP USER IF EXISTS 'user212DWESLoginLogoffTema5'@'%';
 
 --Crear la base de datos
-CREATE DATABASE DB214DWESLoginLogoffTema5;
+CREATE DATABASE DB212DWESLoginLogoffTema5;
 
 --Utilizar la base de datos recién creada
-USE DB214DWESLoginLogoffTema5;
+USE DB212DWESLoginLogoffTema5;
 
 --Crear la tabla T01_Usuario
 CREATE TABLE T01_Usuario (
@@ -35,7 +36,7 @@ CREATE TABLE T02_Departamento (
 )ENGINE=INNODB;
 
 --Creación del usuario de la base de datos
-CREATE USER 'user214DWESLoginLogoffTema5'@'%' IDENTIFIED BY 'paso';
+CREATE USER 'user212DWESLoginLogoffTema5'@'%' IDENTIFIED BY 'paso';
 
 --Otorgar permisos al usuario para acceder a la base de datos
-GRANT ALL PRIVILEGES ON DB214DWESLoginLogoffTema5.* TO 'user214DWESLoginLogoffTema5'@'%';
+GRANT ALL PRIVILEGES ON DB212DWESLoginLogoffTema5.* TO 'user212DWESLoginLogoffTema5'@'%';

@@ -16,7 +16,7 @@ if(isset($_REQUEST['cerrarSesion'])){
 
 //Si el usuario pulsa el botón 'Detalle', mando al usuario al index de DWES
 if(isset($_REQUEST['detalle'])){
-    $_SESSION['paginaEnCurso'] = 'tecnologias'; // Asigno a la página en curso la pagina de tecnologias
+    $_SESSION['paginaEnCurso'] = 'detalle'; // Asigno a la página en curso la pagina de tecnologias
     header('Location: indexLoginLogoutMulticapaPOO.php'); // Redirecciono al index de la APP
     exit;
 }
@@ -36,8 +36,8 @@ if(isset($_REQUEST['mtoDepartamentos'])){
     exit;
 }
 
-$descripcionUsuario = $_SESSION['user214DWESLoginLogoutMulticapaPOO']->get_descUsuario(); // Recupero y almaceno la descripción del usuario actual
-$numeroConexionesUsuario = $_SESSION['user214DWESLoginLogoutMulticapaPOO']->get_numAcceso(); // Recupero y almaceno el número de conexiones del usuario actual
-$fechaHoraUltimaConexionAnterior = $_SESSION['user214DWESLoginLogoutMulticapaPOO']->get_fechaHoraUltimaConexionAnterior(); // Recupero y almaceno la fecha y hora de conexión anterior del usuario actual
+$descripcionUsuario = $_SESSION['user212DWESLoginLogoutMulticapaPOO']->get_descUsuario(); // Recupero y almaceno la descripción del usuario actual
+$numeroConexionesUsuario = $_SESSION['user212DWESLoginLogoutMulticapaPOO']->get_numAcceso(); // Recupero y almaceno el número de conexiones del usuario actual
+$fechaHoraUltimaConexionAnterior = $_SESSION['user212DWESLoginLogoutMulticapaPOO']->get_fechaHoraUltimaConexionAnterior(); // Recupero y almaceno la fecha y hora de conexión anterior del usuario actual
 
 require_once $aView[$_COOKIE['idioma']]['layout']; // Cargo la vista de 'inicioPrivado'
