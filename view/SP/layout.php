@@ -42,11 +42,11 @@
         <footer class="position-fixed bottom-0 end-0">
             <div class="row text-center">
                 <div class="footer-item">
-                    <address>© <a href="../../index.html" target="_blank" style="color: white; text-decoration: none;">Oscar Pascual Ferrero</a>
+                    <address>© <a href="../../index.html" target="_blank" style="color: white; text-decoration: none; background-color: lightgray">Oscar Pascual Ferrero</a>
                         IES LOS SAUCES 2023-24 </address>
                 </div>
                 <div class="footer-item">
-                    <a href="../212DWESProyectoDWES/indexProyectoDWES.html" style="color: black; text-decoration: none;">Inicio</a>
+                    <a href="../212DWESProyectoDWES/indexProyectoDWES.html" style="color: black; text-decoration: none; background-color: lightgray">Inicio</a>
                 </div>
                 <div class="footer-item">
                     <a href="https://github.com/Discreppo/212DWESLoginLogoutMulticapaPOO.git" target="_blank"><img

@@ -17,7 +17,7 @@ if(isset($_REQUEST['cancelar'])){
 //Si el usuario pulsa el botón 'Registrarse', mando al usuario al index de DWES
 if(isset($_REQUEST['registrarse'])){ 
     $_SESSION['paginaAnterior'] = 'login'; // Asigno a la página anterior la página de login
-    $_SESSION['paginaEnCurso'] = 'registro'; // Asigno a la pagina en curso la pagina de registro
+    $_SESSION['paginaEnCurso'] = 'wip'; // Asigno a la pagina en curso la pagina de registro
     header('Location: indexLoginLogoutMulticapaPOO.php'); // Redirecciono al index de la APP
     exit;
 }

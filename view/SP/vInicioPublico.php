@@ -23,7 +23,6 @@
         <div class="col text-center">
             <form method="post" action="indexLoginLogoutMulticapaPOO.php">
                 <button class="btn btn-secondary" type="submit" name="login">Login</button>
-                <button class="btn btn-secondary" type="submit" name="salir">Salir</button>
             </form>
         </div>
     </div>

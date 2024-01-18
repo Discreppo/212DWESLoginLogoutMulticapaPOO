@@ -1,7 +1,8 @@
 <!--
-        Descripción: 214DWESLoginLogoutMulticapaPOO -- vInicioPublico.php
-        Autor: Carlos García Cachón
-        Fecha de creación/modificación: 02/01/2024
+        Descripción: 212DWESLoginLogoutMulticapaPOO -- vInicioPublico.php
+        Autor original: Carlos García Cachón
+        Autor: Oscar Pascual Ferrero
+        Fecha de creación/modificación: 17/01/2024
 -->
 <div class="container mt-3">
     <div class="row mb-5">
@@ -22,7 +23,6 @@
         <div class="col text-center">
             <form method="post" action="indexLoginLogoutMulticapaPOO.php">
                 <button class="btn btn-secondary" type="submit" name="login">Login</button>
-                <button class="btn btn-secondary" type="submit" name="salir">Salir</button>
             </form>
         </div>
     </div>
