@@ -1,13 +1,23 @@
 <?php
 /**
- * @author Carlos García Cachón
+ * @author original Carlos García Cachón
+ * @author Oscar Pascual Ferrero
  * @version 1.0
- * @since 27/12/2023
+ * @since 15/01/2024
  * @copyright Todos los derechos reservados a Carlos García
- * 
- * @Annotation Proyecto LoginLogoutMulticapaPOO - Parte de 'cInicioPublico'
- * 
- */
+ */ 
+
+ if (!isset($_COOKIE['idioma'])) { // Comprobamos si la cookie esta declarada
+   setcookie("idioma", "SP", time() + 2592000); // En caso negativo la creamos y ponemos el valor por defecto
+   header('Location: indexLoginLogoutMulticapaPOO.php'); // Redirecciono al index de la APP
+   exit();
+}
+
+if (isset($_REQUEST['botonIdioma'])) { // Comprobamos si el usuario a pulsado algún botón de idioma
+    setcookie("idioma", $_REQUEST['botonIdioma'], time() + 2592000); // En caso afirmativo creamos la cookie y la cargamos con el valor seleccionado y ponemos una fecha de caducidad de 1 mes
+    header('Location: indexLoginLogoutMulticapaPOO.php'); // Redirecciono al index de la APP
+    exit();
+}
 
 // Si el usuario pulsa el botón 'Iniciar Sesión', mando al usuario a la página del login
 if(isset($_REQUEST['login'])){ 
@@ -15,11 +25,5 @@ if(isset($_REQUEST['login'])){
     header('Location: indexLoginLogoutMulticapaPOO.php'); // Redirecciono al index de la APP
     exit;
 }
-
-//Si el usuario pulsa el botón 'Salir', mando al usuario al index de DWES
-if(isset($_REQUEST['salir'])){ 
-    header('Location: ../214DWESProyectoDWES/indexProyectoDWES.html'); // Redirecciono al index de DWES
-    exit;
-}
-
-require_once $view['layout']; // Cargo la vista de 'inicioPublico'
+ 
+require_once $aView[$_COOKIE['idioma']]['layout']; // Cargo la vista de 'inicioPublico' 

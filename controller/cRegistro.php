@@ -1,14 +1,12 @@
 <?php
 
 /**
- * @author Carlos García Cachón
+ * @author original Carlos García Cachón
+ * @author Oscar Pascual Ferrero
  * @version 1.0
- * @since 02/01/2024
+ * @since 15/01/2024
  * @copyright Todos los derechos reservados a Carlos García
- * 
- * @Annotation Proyecto LoginLogoutMulticapaPOO - Parte de 'cRegistro' 
- * 
- */
+ */ 
 
 //Si el usuario pulsa el botón 'Cancelar', mando al usuario al index de DWES
 if (isset($_REQUEST['cancelar'])) {
