@@ -5,7 +5,7 @@
  * @version 1.0
  * @since 15/01/2024
  * @copyright Todos los derechos reservados a Carlos García
- -->
+-->
 <style>
     .ejercicio {
         text-align: justify;
@@ -31,16 +31,9 @@
         // $_SESSION
         echo('<div class="ejercicio">');
         echo('<h3>$_SESSION</h3>');
-        foreach ($_SESSION as $key => $valor) {
-            if ($key === 'user212DWESLoginLogoutMulticapaPOO' && $valor instanceof Usuario) {
-                // Accede a las propiedades o métodos del objeto Usuario para obtener la información deseada
-                echo('<pre>');
-                var_dump($_SESSION['user212DWESLoginLogoutMulticapaPOO']);
-                echo ('</pre>');
-            } else {
-                echo('<u>' . $key . '</u> => <b>' . $valor . '</b><br>');
-            }
-        }
+        echo('<pre>');
+        var_dump($_SESSION['user212DWESLoginLogoutMulticapaPOO']);
+        echo ('</pre>');
         echo('</div>');
 
         // $_COOKIE
