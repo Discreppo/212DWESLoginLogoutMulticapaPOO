@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <!--
-        Descripción: 214DWESLoginLogoutMulticapaPOO -- vLogin.php
-        Autor: Carlos García Cachón
-        Fecha de creación/modificación: 02/01/2024
+        Descripción: 212DWESLoginLogoutMulticapaPOO -- vLogin.php
+        Autor original: Carlos García Cachón
+        Autor: Oscar Pascual Ferrero
+        Fecha de creación/modificación: 17/01/2024
 -->
 
 <style>
