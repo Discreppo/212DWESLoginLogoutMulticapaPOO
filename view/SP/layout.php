@@ -49,7 +49,7 @@
                     <a href="../212DWESProyectoDWES/indexProyectoDWES.html" style="color: black; text-decoration: none;">Inicio</a>
                 </div>
                 <div class="footer-item">
-                    <a href="https://github.com/Discreppo/212DWESLoginLogoffTema5.git" target="_blank"><img
+                    <a href="https://github.com/Discreppo/212DWESLoginLogoutMulticapaPOO.git" target="_blank"><img
                             src="webroot/media/images/github.png" alt="LogoGitHub" /></a>
                 </div>
             </div>
